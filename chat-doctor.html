@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MSD Telemedicine - Daftar Dokter</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #d9534f;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .doctor-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            transition: box-shadow 0.3s;
+            display: flex; /* Flexbox for layout */
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Center vertically */
+        }
+
+        .doctor-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .doctor-image {
+            width: 80px; /* Image width */
+            height: 80px; /* Image height */
+            border-radius: 50%; /* Circular image */
+            margin-left: 15px; /* Space between text and image */
+        }
+
+        .doctor-info {
+            flex: 1; /* Allow info to take up remaining space */
+            margin-right: 15px; /* Space before the image */
+        }
+
+        .doctor-name {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .doctor-specialty {
+            font-size: 1.1em;
+            color: #6c757d;
+        }
+
+        .doctor-price {
+            font-size: 1.2em;
+            color: #d9534f;
+            margin: 10px 0;
+        }
+
+        .btn-chat {
+            background-color: #d9534f;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .btn-chat:hover {
+            background-color: #c9302c;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer i {
+            font-size: 24px;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Daftar Dokter</h1>
+</div>
+
+<div class="container">
+    <div class="doctor-card">
+        <div class="doctor-info">
+            <div class="doctor-name">Dr. Jane Doe</div>
+            <div class="doctor-specialty">Spesialis Penyakit Dalam</div>
+            <div class="doctor-price">Harga: 50 Koin</div>
+            <button class="btn btn-chat" onclick="startChat('Dr. Jane Doe')">Chat Sekarang</button>
+        </div>
+        <img src="https://via.placeholder.com/80" alt="Dr. Jane Doe" class="doctor-image"/>
+    </div>
+
+    <div class="doctor-card">
+        <div class="doctor-info">
+            <div class="doctor-name">Dr. John Smith</div>
+            <div class="doctor-specialty">Spesialis Anak</div>
+            <div class="doctor-price">Harga: 40 Koin</div>
+            <button class="btn btn-chat" onclick="startChat('Dr. John Smith')">Chat Sekarang</button>
+        </div>
+        <img src="https://via.placeholder.com/80" alt="Dr. John Smith" class="doctor-image"/>
+    </div>
+
+    <div class="doctor-card">
+        <div class="doctor-info">
+            <div class="doctor-name">Dr. Alice Brown</div>
+            <div class="doctor-specialty">Dokter Gigi</div>
+            <div class="doctor-price">Harga: 30 Koin</div>
+            <button class="btn btn-chat" onclick="startChat('Dr. Alice Brown')">Chat Sekarang</button>
+        </div>
+        <img src="https://via.placeholder.com/80" alt="Dr. Alice Brown" class="doctor-image"/>
+    </div>
+
+    <div class="doctor-card">
+        <div class="doctor-info">
+            <div class="doctor-name">Dr. Bob White</div>
+            <div class="doctor-specialty">Spesialis Kulit</div>
+            <div class="doctor-price">Harga: 60 Koin</div>
+            <button class="btn btn-chat" onclick="startChat('Dr. Bob White')">Chat Sekarang</button>
+        </div>
+        <img src="https://via.placeholder.com/80" alt="Dr. Bob White" class="doctor-image"/>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    <a href="history.html"><i class="fas fa-history"></i></a>
+    <a href="chat.html"><i class="fas fa-envelope"></i></a>
+    <a href="profile.html"><i class="fas fa-user"></i></a>
+</div>
+
+<script>
+    function startChat(doctorName) {
+        // Redirect to the chat page for the selected doctor
+        window.location.href = 'chat.html?doctor=' + encodeURIComponent(doctorName);
+    }
+</script>
+
+<script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>

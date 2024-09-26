@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MSD Telemedicine - Profil</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #d9534f;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .header img {
+            width: 200px;
+        }
+
+        .profile-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer i {
+            font-size: 24px;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img alt="Logo Sigo Health Pasien"
+         src="https://medikasolusidigital.com/wp-content/uploads/2021/10/MEDIKA-SOLUSI-DIGITAL.png"/>
+</div>
+
+<div class="container profile-container">
+    <h5>Informasi Pribadi</h5>
+    <form>
+        <div class="form-group">
+            <label for="fullName">Nama Lengkap</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Masukkan Nama Lengkap" value="John Doe">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Masukkan Email"
+                   value="john.doe@example.com">
+        </div>
+        <div class="form-group">
+            <label for="phone">Nomor Telepon</label>
+            <input type="text" class="form-control" id="phone" placeholder="Masukkan Nomor Telepon"
+                   value="0812-3456-7890">
+        </div>
+        <div class="form-group">
+            <label for="address">Alamat</label>
+            <textarea class="form-control" id="address" rows="3"
+                      placeholder="Masukkan Alamat">Jl. Kebon Kacang No. 5</textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Simpan Perubahan</button>
+    </form>
+</div>
+
+<div class="footer">
+    <a href="/"><i class="fas fa-home"></i></a>
+    <a href="/history.html"><i class="fas fa-clipboard-list"></i></a>
+    <a href="/chat.html"><i class="fas fa-envelope"></i></a>
+    <a href="#"><i class="fas fa-user"></i></a>
+</div>
+
+<script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>

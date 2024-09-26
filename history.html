@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MSD Telemedicine - Riwayat</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #d9534f;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .header img {
+            width: 200px;
+        }
+
+        .header .search-bar {
+            margin-top: 10px;
+        }
+
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .header .search-bar .fa-search {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #d9534f;
+        }
+
+        .card {
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer i {
+            font-size: 24px;
+            color: #d9534f;
+        }
+
+        .history-section {
+            margin: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img alt="Logo Sigo Health Pasien"
+         src="https://medikasolusidigital.com/wp-content/uploads/2021/10/MEDIKA-SOLUSI-DIGITAL.png"/>
+    <div class="search-bar position-relative">
+        <input placeholder="Cari Riwayat" type="text"/>
+        <i class="fas fa-search"></i>
+    </div>
+</div>
+
+<div class="container">
+    <h5 class="mt-3">Riwayat Konsultasi</h5>
+    <div class="history-section">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <span><strong>Konsultasi Dokter Umum</strong></span>
+                    <span>30 September 2024</span>
+                </div>
+                <p>Dokter: Dr. Jane Doe</p>
+                <p>Catatan: Masalah kesehatan umum, diberikan resep untuk obat. </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <span><strong>Pemeriksaan Gigi</strong></span>
+                    <span>25 September 2024</span>
+                </div>
+                <p>Dokter: Dr. John Smith</p>
+                <p>Catatan: Pemeriksaan rutin, tidak ada masalah.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <span><strong>Konsultasi Spesialis THT</strong></span>
+                    <span>20 September 2024</span>
+                </div>
+                <p>Dokter: Dr. Emily Brown</p>
+                <p>Catatan: Direkomendasikan tes lebih lanjut.</p>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="mt-3">Riwayat Pesanan Obat</h5>
+    <div class="history-section">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <span><strong>ORDER #5</strong></span>
+                    <span>30 September 2024</span>
+                </div>
+                <p>Obat: Paracetamol</p>
+                <p>Status: Dikirim</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <span><strong>ORDER #4</strong></span>
+                    <span>25 September 2024</span>
+                </div>
+                <p>Obat: Amoxicillin</p>
+                <p>Status: Diterima</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="/"><i class="fas fa-home"></i></a>
+    <a href="#"><i class="fas fa-clipboard-list"></i></a>
+    <a href="/chat.html"><i class="fas fa-envelope"></i></a>
+    <a href="/profile.html"><i class="fas fa-user"></i></a>
+</div>
+
+<script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>
